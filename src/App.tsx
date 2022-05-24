@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Home } from './Components/Home/Home';
+
+const tabs = [
+  {
+    name:'tab 1',
+    text:'Texto do primeiro tab'
+  },
+  {
+    name:'tab 2',
+    text:'Texto do segundo tab'
+  },
+  {
+    name:'tab 3',
+    text:'Texto do terceiro tab'
+  },
+  {
+    name:'tab 4',
+    text:'Texto do quarto tab'
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Home tabs={tabs}/>
   );
 }
 
